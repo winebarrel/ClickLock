@@ -8,3 +8,10 @@ func lockScreen() {
     let SACLockScreenImmediate = unsafeBitCast(sym, to: Func.self)
     SACLockScreenImmediate()
 }
+
+func sleepMachine() {
+    let process = Process()
+    process.launchPath = "/usr/bin/pmset"
+    process.arguments = ["sleepnow"]
+    process.launch()
+}
