@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD318CD62B9C2D140078BB7F /* MenuBarExtraAccess in Frameworks */ = {isa = PBXBuildFile; productRef = AD318CD52B9C2D140078BB7F /* MenuBarExtraAccess */; };
 		ADEEC4D12B9C1FE900567E3A /* ClickLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC4D02B9C1FE900567E3A /* ClickLockApp.swift */; };
 		ADEEC4D32B9C1FE900567E3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC4D22B9C1FE900567E3A /* ContentView.swift */; };
 		ADEEC4D52B9C1FEC00567E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEEC4D42B9C1FEC00567E3A /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD318CD62B9C2D140078BB7F /* MenuBarExtraAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = ClickLock;
+			packageProductDependencies = (
+				AD318CD52B9C2D140078BB7F /* MenuBarExtraAccess */,
+			);
 			productName = ClickLock;
 			productReference = ADEEC4CD2B9C1FE900567E3A /* ClickLock.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = ADEEC4C42B9C1FE900567E3A;
+			packageReferences = (
+				AD318CD42B9C2D140078BB7F /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */,
+			);
 			productRefGroup = ADEEC4CE2B9C1FE900567E3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD318CD42B9C2D140078BB7F /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MenuBarExtraAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD318CD52B9C2D140078BB7F /* MenuBarExtraAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD318CD42B9C2D140078BB7F /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */;
+			productName = MenuBarExtraAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADEEC4C52B9C1FE900567E3A /* Project object */;
 }
