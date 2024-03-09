@@ -33,12 +33,10 @@ struct ClickLockApp: App {
                     logger.debug("failed to update 'Launch at login': \(error)")
                 }
             } label: {
-                HStack(spacing: 0) {
-                    if launchAtLogin {
-                        Image(systemName: "checkmark")
-                    }
-                    Text("Launch at loginx")
+                if launchAtLogin {
+                    Image(systemName: "checkmark")
                 }
+                Text("Launch at loginx")
             }
             Divider()
             Button("Quit") {
