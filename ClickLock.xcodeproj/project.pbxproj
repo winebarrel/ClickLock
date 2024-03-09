@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AD318CD62B9C2D140078BB7F /* MenuBarExtraAccess in Frameworks */ = {isa = PBXBuildFile; productRef = AD318CD52B9C2D140078BB7F /* MenuBarExtraAccess */; };
+		AD318CD82B9C2F530078BB7F /* MouseHandlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD318CD72B9C2F530078BB7F /* MouseHandlerView.swift */; };
+		AD318CDA2B9C36710078BB7F /* RightClickMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD318CD92B9C36710078BB7F /* RightClickMenuView.swift */; };
+		AD318CDC2B9C3B5B0078BB7F /* LockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD318CDB2B9C3B5B0078BB7F /* LockScreen.swift */; };
 		ADEEC4D12B9C1FE900567E3A /* ClickLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC4D02B9C1FE900567E3A /* ClickLockApp.swift */; };
-		ADEEC4D32B9C1FE900567E3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC4D22B9C1FE900567E3A /* ContentView.swift */; };
 		ADEEC4D52B9C1FEC00567E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEEC4D42B9C1FEC00567E3A /* Assets.xcassets */; };
 		ADEEC4D82B9C1FEC00567E3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEEC4D72B9C1FEC00567E3A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD318CD72B9C2F530078BB7F /* MouseHandlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHandlerView.swift; sourceTree = "<group>"; };
+		AD318CD92B9C36710078BB7F /* RightClickMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightClickMenuView.swift; sourceTree = "<group>"; };
+		AD318CDB2B9C3B5B0078BB7F /* LockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreen.swift; sourceTree = "<group>"; };
 		ADEEC4CD2B9C1FE900567E3A /* ClickLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEEC4D02B9C1FE900567E3A /* ClickLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickLockApp.swift; sourceTree = "<group>"; };
-		ADEEC4D22B9C1FE900567E3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADEEC4D42B9C1FEC00567E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADEEC4D72B9C1FEC00567E3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADEEC4D92B9C1FEC00567E3A /* ClickLock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClickLock.entitlements; sourceTree = "<group>"; };
@@ -56,7 +60,9 @@
 			children = (
 				ADEEC4D92B9C1FEC00567E3A /* ClickLock.entitlements */,
 				ADEEC4D02B9C1FE900567E3A /* ClickLockApp.swift */,
-				ADEEC4D22B9C1FE900567E3A /* ContentView.swift */,
+				AD318CDB2B9C3B5B0078BB7F /* LockScreen.swift */,
+				AD318CD72B9C2F530078BB7F /* MouseHandlerView.swift */,
+				AD318CD92B9C36710078BB7F /* RightClickMenuView.swift */,
 				ADEEC4D42B9C1FEC00567E3A /* Assets.xcassets */,
 				ADEEC4D62B9C1FEC00567E3A /* Preview Content */,
 			);
@@ -170,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADEEC4D32B9C1FE900567E3A /* ContentView.swift in Sources */,
+				AD318CDC2B9C3B5B0078BB7F /* LockScreen.swift in Sources */,
 				ADEEC4D12B9C1FE900567E3A /* ClickLockApp.swift in Sources */,
+				AD318CD82B9C2F530078BB7F /* MouseHandlerView.swift in Sources */,
+				AD318CDA2B9C36710078BB7F /* RightClickMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
