@@ -2,6 +2,12 @@
 
 This is an app that locks the macOS screen by clicking the icon on the menu bar.
 
+status).
+
+## Installation
+
+Download from [releases page](https://github.com/winebarrel/ClickLock/releases/latest).
+
 ## Usage
 
 1. Left-click on the menu bar icon.
