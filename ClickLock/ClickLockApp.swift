@@ -16,7 +16,7 @@ struct ClickLockApp: App {
                 sleepInsteadOfLock.toggle()
             } label: {
                 let check = sleepInsteadOfLock ? "􀆅" : ""
-                Text(check + "Run \"Sleep\" instead of \"Lock\"")
+                Text(check + "Use \"Sleep\" instead of \"Lock\"")
             }
             Button {
                 launchAtLogin.toggle()
