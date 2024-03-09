@@ -1,13 +1,43 @@
 import MenuBarExtraAccess
+import os
+import ServiceManagement
 import SwiftUI
 
 @main
 struct ClickLockApp: App {
     @State private var isMenuPresented = false
+    private let logger = Logger(subsystem: "jp.winebarrel.ClickLock", category: "Application")
+    @State private var launchAtLogin = SMAppService.mainApp.status == .enabled
+    @AppStorage("sleepInsteadOfLock") private var sleepInsteadOfLock = false
 
     var body: some Scene {
         MenuBarExtra {
-            RightClickMenuView()
+            Button {
+                sleepInsteadOfLock.toggle()
+            } label: {
+                let check = sleepInsteadOfLock ? "􀆅" : ""
+                Text(check + "Use \"Sleep\" instead of \"Lock\"")
+            }
+            Button {
+                launchAtLogin.toggle()
+
+                do {
+                    if launchAtLogin {
+                        try SMAppService.mainApp.register()
+                    } else {
+                        try SMAppService.mainApp.unregister()
+                    }
+                } catch {
+                    logger.debug("failed to update 'Launch at login': \(error)")
+                }
+            } label: {
+                let check = launchAtLogin ? "􀆅" : ""
+                Text(check + "Launch at loginx")
+            }
+            Divider()
+            Button("Quit") {
+                NSApplication.shared.terminate(self)
+            }
         } label: {
             Image(systemName: "lock.display")
         }
@@ -16,7 +46,11 @@ struct ClickLockApp: App {
                 let mouseHandlerView = MouseHandlerView(frame: button.frame)
 
                 mouseHandlerView.onMouseDown = {
-                    lockScreen()
+                    if sleepInsteadOfLock {
+                        sleepMachine()
+                    } else {
+                        lockScreen()
+                    }
                 }
 
                 button.addSubview(mouseHandlerView)
