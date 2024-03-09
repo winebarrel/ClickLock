@@ -15,8 +15,10 @@ struct ClickLockApp: App {
             Button {
                 sleepInsteadOfLock.toggle()
             } label: {
-                let check = sleepInsteadOfLock ? "􀆅" : ""
-                Text(check + "Use \"Sleep\" instead of \"Lock\"")
+                if sleepInsteadOfLock {
+                    Image(systemName: "checkmark")
+                }
+                Text("Use \"Sleep\" instead of \"Lock\"")
             }
             Button {
                 launchAtLogin.toggle()
@@ -31,8 +33,10 @@ struct ClickLockApp: App {
                     logger.debug("failed to update 'Launch at login': \(error)")
                 }
             } label: {
-                let check = launchAtLogin ? "􀆅" : ""
-                Text(check + "Launch at loginx")
+                if launchAtLogin {
+                    Image(systemName: "checkmark")
+                }
+                Text("Launch at loginx")
             }
             Divider()
             Button("Quit") {
