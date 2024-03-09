@@ -52,10 +52,10 @@
 		ADEEC4CF2B9C1FE900567E3A /* ClickLock */ = {
 			isa = PBXGroup;
 			children = (
+				ADEEC4D92B9C1FEC00567E3A /* ClickLock.entitlements */,
 				ADEEC4D02B9C1FE900567E3A /* ClickLockApp.swift */,
 				ADEEC4D22B9C1FE900567E3A /* ContentView.swift */,
 				ADEEC4D42B9C1FEC00567E3A /* Assets.xcassets */,
-				ADEEC4D92B9C1FEC00567E3A /* ClickLock.entitlements */,
 				ADEEC4D62B9C1FEC00567E3A /* Preview Content */,
 			);
 			path = ClickLock;
