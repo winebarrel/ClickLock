@@ -36,7 +36,7 @@ struct ClickLockApp: App {
                 if launchAtLogin {
                     Image(systemName: "checkmark")
                 }
-                Text("Launch at loginx")
+                Text("Launch at login")
             }
             Divider()
             Button("Quit") {
