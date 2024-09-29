@@ -1,8 +1,8 @@
 # ClickLock
 
-This is an app that locks the macOS screen by clicking the icon on the menu bar.
+[![CI](https://github.com/winebarrel/ClickLock/actions/workflows/ci.yml/badge.svg)](https://github.com/winebarrel/ClickLock/actions/workflows/ci.yml)
 
-status).
+This is an app that locks the macOS screen by clicking the icon on the menu bar.
 
 ## Installation
 
